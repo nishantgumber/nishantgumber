@@ -160,22 +160,10 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- ④ ANIMATED SKILL RADAR CHART                                -->
+<!-- ④ TECH STACK                                               -->
 <!-- ============================================================ -->
 
 ### &nbsp; `> cat ./stack.json`
-
-<br/>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/skills.svg" alt="Skills Radar" width="520"/>
-</div>
-
-<br/>
-
-<!-- TECH BADGES — supplementary detail below the radar -->
-<details>
-<summary>&nbsp; 🔍 Full tech stack breakdown</summary>
 
 <br/>
 
@@ -212,8 +200,6 @@
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
 ![Artifactory](https://img.shields.io/badge/Artifactory-40BE46?style=for-the-badge&logo=jfrog&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
-
-</details>
 
 <br/>
 
