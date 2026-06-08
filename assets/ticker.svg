@@ -1,77 +1,58 @@
 <svg viewBox="0 0 860 48" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="fadeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#0D1117" stop-opacity="1"/>
-      <stop offset="8%"   stop-color="#0D1117" stop-opacity="0"/>
-      <stop offset="92%"  stop-color="#0D1117" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0D1117" stop-opacity="1"/>
-    </linearGradient>
-    <style>
-      .ticker-track {
-        animation: scroll 28s linear infinite;
-      }
-      .ticker-text {
-        font-family: 'Fira Code', 'Courier New', monospace;
-        font-size: 13px;
-        fill: #a9b1d6;
-      }
-      .ticker-dot {
-        fill: #565f89;
-        font-size: 13px;
-        font-family: monospace;
-      }
-      .ticker-tag {
-        font-family: 'Fira Code', 'Courier New', monospace;
-        font-size: 12px;
-      }
-      @keyframes scroll {
-        0%   { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-    </style>
-  </defs>
 
   <!-- Background -->
   <rect width="860" height="48" rx="6" fill="#16161e" stroke="#1e2030" stroke-width="1"/>
 
-  <!-- Status dot -->
+  <!-- Live status dot with SMIL pulse -->
   <circle cx="20" cy="24" r="5" fill="#9ece6a">
     <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <text x="32" y="29" font-family="'Fira Code', monospace" font-size="11" fill="#565f89">now:</text>
 
-  <!-- Scrolling track — duplicated for seamless loop -->
-  <clipPath id="tickerClip">
-    <rect x="68" y="0" width="792" height="48"/>
+  <!-- "now:" label -->
+  <text x="32" y="29" font-family="'Fira Code', Courier New, monospace" font-size="11" fill="#565f89">now:</text>
+
+  <!-- Clip to keep text inside bounds -->
+  <clipPath id="clip">
+    <rect x="70" y="0" width="790" height="48"/>
   </clipPath>
 
-  <g clip-path="url(#tickerClip)">
-    <g class="ticker-track">
-      <!-- First copy -->
-      <text class="ticker-text" x="68"  y="29">🚀 Shipping Clozzr — AI SaaS for mortgage brokers</text>
-      <text class="ticker-dot"  x="378" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="400" y="29">☁️ AWS CDK infra deployments @ BMO</text>
-      <text class="ticker-dot"  x="644" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="666" y="29">🎵 Contributing to Audoji RCS platform</text>
-      <text class="ticker-dot"  x="908" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="930" y="29">📚 Deepening system design skills</text>
-      <text class="ticker-dot"  x="1140" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="1162" y="29">🌎 graduating Dec 2026</text>
-      <text class="ticker-dot"  x="1454" y="29">&nbsp;·&nbsp;</text>
-      <!-- Second copy (seamless) -->
-      <text class="ticker-text" x="1476" y="29">🚀 Shipping Clozzr — AI SaaS for mortgage brokers</text>
-      <text class="ticker-dot"  x="1786" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="1808" y="29">☁️ AWS CDK infra deployments @ BMO</text>
-      <text class="ticker-dot"  x="2052" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="2074" y="29">🎵 Contributing to Audoji RCS platform</text>
-      <text class="ticker-dot"  x="2316" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="2338" y="29">📚 Deepening system design skills</text>
-      <text class="ticker-dot"  x="2548" y="29">&nbsp;·&nbsp;</text>
-      <text class="ticker-text" x="2570" y="29">🌎 graduating Dec 2026</text>
-      <text class="ticker-dot"  x="2862" y="29">&nbsp;·&nbsp;</text>
+  <!-- Scrolling text group — SMIL translateX animation -->
+  <g clip-path="url(#clip)">
+    <g>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="-1408,0"
+        dur="28s"
+        repeatCount="indefinite"/>
+
+      <!-- Copy 1 -->
+      <text x="70"   y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">🚀 Shipping Clozzr — AI SaaS for mortgage brokers</text>
+      <text x="430"  y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="460"  y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">☁️ AWS CDK infra deployments @ BMO</text>
+      <text x="720"  y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="750"  y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">🎵 Contributing to Audoji RCS platform</text>
+      <text x="1020" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="1050" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">📚 Deepening system design skills</text>
+      <text x="1280" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="1310" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">🎓 Graduating Dec 2026</text>
+
+      <!-- Copy 2 (seamless loop) -->
+      <text x="1478" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">🚀 Shipping Clozzr — AI SaaS for mortgage brokers</text>
+      <text x="1838" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="1868" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">☁️ AWS CDK infra deployments @ BMO</text>
+      <text x="2128" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="2158" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">🎵 Contributing to Audoji RCS platform</text>
+      <text x="2428" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="2458" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">📚 Deepening system design skills</text>
+      <text x="2688" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#565f89">  ·  </text>
+      <text x="2718" y="29" font-family="'Fira Code', Courier New, monospace" font-size="13" fill="#a9b1d6">🎓 Graduating Dec 2026</text>
     </g>
   </g>
 
-  <!-- Fade masks for smooth edge blending -->
-  <rect x="68" y="0" width="792" height="48" fill="url(#fadeLeft)"/>
+  <!-- Fade masks using SMIL-safe rect overlays -->
+  <rect x="70"  y="0" width="40"  height="48" fill="#16161e" opacity="0.9"/>
+  <rect x="820" y="0" width="40"  height="48" fill="#16161e" opacity="0.9"/>
+
 </svg>
