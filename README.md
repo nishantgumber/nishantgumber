@@ -143,7 +143,6 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 
 ---
 
-## 🐍 Contribution snake
  
 <div align="center">
 <picture>
