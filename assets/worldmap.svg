@@ -1,0 +1,109 @@
+<svg viewBox="0 0 860 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0f2027"/>
+    </linearGradient>
+    <filter id="countryGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="440" rx="8" fill="url(#mapBg)"/>
+
+  <!-- Ocean grid lines -->
+  <g stroke="#1e2030" stroke-width="0.5" opacity="0.4">
+    <!-- Latitude lines -->
+    <line x1="0" y1="110" x2="860" y2="110"/>
+    <line x1="0" y1="165" x2="860" y2="165"/>
+    <line x1="0" y1="220" x2="860" y2="220"/>
+    <line x1="0" y1="275" x2="860" y2="275"/>
+    <line x1="0" y1="330" x2="860" y2="330"/>
+    <!-- Longitude lines -->
+    <line x1="143" y1="0" x2="143" y2="440"/>
+    <line x1="286" y1="0" x2="286" y2="440"/>
+    <line x1="430" y1="0" x2="430" y2="440"/>
+    <line x1="573" y1="0" x2="573" y2="440"/>
+    <line x1="716" y1="0" x2="716" y2="440"/>
+  </g>
+
+  <!-- Continent blobs — simplified stylized shapes -->
+
+  <!-- North America -->
+  <ellipse cx="175" cy="185" rx="115" ry="90" fill="#1a1b27" stroke="#414868" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- South America -->
+  <ellipse cx="240" cy="320" rx="60" ry="80" fill="#1a1b27" stroke="#414868" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- Europe -->
+  <ellipse cx="430" cy="155" rx="55" ry="45" fill="#1a1b27" stroke="#414868" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- Africa -->
+  <ellipse cx="445" cy="285" rx="65" ry="90" fill="#1a1b27" stroke="#414868" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- Asia -->
+  <ellipse cx="620" cy="185" rx="140" ry="100" fill="#1a1b27" stroke="#414868" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- Australia -->
+  <ellipse cx="700" cy="335" rx="55" ry="38" fill="#1a1b27" stroke="#414868" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- ── Highlighted countries ── -->
+
+  <!-- Canada — highlighted blue -->
+  <ellipse cx="165" cy="155" rx="95" ry="45" fill="#7aa2f7" opacity="0.25" filter="url(#countryGlow)"/>
+  <ellipse cx="165" cy="155" rx="95" ry="45" fill="none" stroke="#7aa2f7" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- USA — highlighted purple -->
+  <ellipse cx="168" cy="205" rx="80" ry="35" fill="#bb9af7" opacity="0.2" filter="url(#countryGlow)"/>
+  <ellipse cx="168" cy="205" rx="80" ry="35" fill="none" stroke="#bb9af7" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- India — highlighted orange -->
+  <ellipse cx="620" cy="230" rx="30" ry="35" fill="#ff9e64" opacity="0.2" filter="url(#countryGlow)"/>
+  <ellipse cx="620" cy="230" rx="30" ry="35" fill="none" stroke="#ff9e64" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- ── Location pins ── -->
+
+  <!-- Canada pin -->
+  <circle cx="165" cy="148" r="5" fill="#7aa2f7" opacity="0.9">
+    <animate attributeName="r" values="5;8;5" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="165" cy="148" r="3" fill="#7aa2f7"/>
+
+  <!-- USA pin -->
+  <circle cx="168" cy="200" r="4" fill="#bb9af7" opacity="0.9">
+    <animate attributeName="r" values="4;7;4" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="168" cy="200" r="2.5" fill="#bb9af7"/>
+
+  <!-- India pin -->
+  <circle cx="620" cy="228" r="4" fill="#ff9e64" opacity="0.9">
+    <animate attributeName="r" values="4;7;4" dur="3s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="620" cy="228" r="2.5" fill="#ff9e64"/>
+
+  <!-- ── Connection lines between pins ── -->
+  <line x1="165" y1="148" x2="168" y2="200" stroke="#7aa2f7" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.4"/>
+  <line x1="168" y1="200" x2="620" y2="228" stroke="#bb9af7" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.3"/>
+
+  <!-- ── Labels ── -->
+  <text x="110" y="138" font-family="Fira Code, monospace" font-size="10" fill="#7aa2f7" opacity="0.9">🇨🇦 Canada</text>
+  <text x="86"  y="222" font-family="Fira Code, monospace" font-size="10" fill="#bb9af7" opacity="0.9">🇺🇸 United States</text>
+  <text x="638" y="224" font-family="Fira Code, monospace" font-size="10" fill="#ff9e64" opacity="0.9">🇮🇳 India</text>
+
+  <!-- Legend -->
+  <rect x="20" y="390" width="260" height="36" rx="6" fill="#16161e" stroke="#1e2030" stroke-width="0.8"/>
+  <circle cx="38"  cy="408" r="4" fill="#7aa2f7"/>
+  <text x="48"  y="412" font-family="Fira Code, monospace" font-size="10" fill="#565f89">Based in</text>
+  <circle cx="108" cy="408" r="4" fill="#bb9af7"/>
+  <text x="118" y="412" font-family="Fira Code, monospace" font-size="10" fill="#565f89">Target market</text>
+  <circle cx="210" cy="408" r="4" fill="#ff9e64"/>
+  <text x="220" y="412" font-family="Fira Code, monospace" font-size="10" fill="#565f89">Origin</text>
+
+  <!-- Title -->
+  <text x="840" y="412" font-family="Fira Code, monospace" font-size="10" fill="#565f89" text-anchor="end">nishantgumber · 2026</text>
+</svg>
