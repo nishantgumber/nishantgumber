@@ -144,59 +144,6 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 
 ---
 
-## 🐍 Contribution snake
-
-<div align="center">
-
-![snake animation](https://github.com/nishantgumber/nishantgumber/blob/output/dist/snake.svg)
-
-</div>
-
-> ⚙️ **To enable the snake:** create `.github/workflows/snake.yml` in this repo with the content in the section below.
-
-<details>
-<summary>📋 Snake GitHub Action setup (click to expand)</summary>
-
-Create this file at `.github/workflows/snake.yml`:
-
-```yaml
-name: Generate Snake Animation
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: Generate snake.svg
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Then go to **Settings → Actions → General → Workflow permissions** and set it to **Read and write permissions**. Run the action once manually from the Actions tab to generate the first SVG.
-
-</details>
-
-<br/>
-
----
-
 ## 💼 Experience highlights
 
 | Role | Company | Period | Key impact |
