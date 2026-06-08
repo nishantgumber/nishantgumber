@@ -36,7 +36,7 @@ Here are some ideas to get you started:
 const nishant = {
   location:   "Toronto, ON 🇨🇦  →  US Remote 🌎",
   education:  "BSc Applied Computer Science — Dalhousie University (Dec 2026)",
-  current:    ["SWE Intern @ BMO Financial Group", "Founder @ Clozzr"],
+  current:    ["SWE Intern @ BMO Financial Group", "Building Clozzr"],
   interests:  ["Full-Stack Dev", "Cloud Infrastructure", "AI/SaaS", "Startups"],
   openTo:     "Remote US software engineering roles — available Jan 2027",
 };
