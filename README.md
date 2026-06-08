@@ -20,7 +20,7 @@ Here are some ideas to get you started:
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1a1b27,100:414868&height=220&section=header&text=Nishant%20Gumber&fontSize=52&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20Builder%20%7C%20Open%20to%20US%20Remote%20Roles&descAlignY=58&descSize=18&descColor=a9b1d6)
 
 <!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=4x+BMO+Financial+Group+Intern+%F0%9F%8F%A6;Building+Clozzr+%E2%80%94+AI+SaaS+for+Mortgage+Brokers+%F0%9F%9A%80;Full-Stack+%7C+Cloud+%7C+DevOps+Engineer+%E2%98%81%EF%B8%8F;Open+to+Remote+US+Roles+%F0%9F%8C%8E)](https://github.com/nishantgumber)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=4x+BMO+Financial+Group+Intern+%F0%9F%8F%A6;Building+Clozzr+%E2%80%94+AI+SaaS+for+Mortgage+Brokers+%F0%9F%9A%80;Full-Stack+%7C+Cloud+%7C+DevOps+Engineer+%E2%98%81%EF%B8%8F)](https://github.com/nishantgumber)
 
 <br/>
 
