@@ -1,63 +1,135 @@
+<!-- ============================================================ -->
+<!--           NISHANT GUMBER — GITHUB PROFILE README            -->
+<!-- ============================================================ -->
 
+<!-- ① CUSTOM SVG HEADER -->
 <div align="center">
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/header.svg" alt="Nishant Gumber" width="100%"/>
+</div>
 
-<!-- Animated header banner -->
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1a1b27,100:414868&height=220&section=header&text=Nishant%20Gumber&fontSize=52&fontColor=c0caf5&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20Builder&descAlignY=58&descSize=18&descColor=a9b1d6)
-
-<!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=7AA2F7&center=true&vCenter=true&multiline=false&width=500&lines=SWE+Intern+%40+BMO+%F0%9F%8F%A6;Building+Clozzr+%F0%9F%9A%80;Full-Stack+%7C+Cloud+%7C+DevOps)](https://github.com/nishantgumber)
 <br/>
 
-<!-- Profile badges -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nishant-gumber/) [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nishantgumber123@gmail.com)
+<!-- TYPING ANIMATION -->
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=7AA2F7&center=true&vCenter=true&width=480&lines=%24+whoami+%E2%86%92+nishant.gumber;%24+status+%E2%86%92+open+to+US+remote+roles;%24+building+%E2%86%92+Clozzr+%F0%9F%9A%80;%24+learning+%E2%86%92+always)](https://github.com/nishantgumber)
 
 </div>
 
----
+<br/>
 
-## 🧑‍💻 About me
+<!-- QUICK STATS BAR -->
+<div align="center">
 
-```typescript
-const nishant = {
-  location:   "Toronto, ON 🇨🇦  →  US Remote 🌎",
-  education:  "BSc Applied Computer Science — Dalhousie University (Dec 2026)",
-  current:    ["SWE Intern @ BMO Financial Group", "Building Clozzr"],
-  interests:  ["Full-Stack Dev", "Cloud Infrastructure", "AI/SaaS", "Startups"],
-  openTo:     "Remote US software engineering roles — available Jan 2027",
-};
-```
+**`4×`** BMO Intern &nbsp;·&nbsp; **`2`** Products shipped &nbsp;·&nbsp; **`3`** Years building &nbsp;·&nbsp; **`1`** Goal: ship great software
+
+</div>
+
+<br/>
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nishant-gumber/) &nbsp;
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nishantgumber123@gmail.com) &nbsp;
+[![Location](https://img.shields.io/badge/Toronto%2C_ON_🇨🇦-1a1b27?style=for-the-badge)]()
+
+</div>
 
 <br/>
 
 ---
 
-## 🚀 What I'm building
+<br/>
 
-<table>
+<!-- ============================================================ -->
+<!-- ② ANIMATED TERMINAL WINDOW BIO                              -->
+<!-- ============================================================ -->
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/terminal.svg" alt="About Nishant" width="720"/>
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!--                    WHAT I'M BUILDING                        -->
+<!-- ============================================================ -->
+
+### &nbsp; `> ls ./projects`
+
+<br/>
+
+<table width="100%">
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🏠 [Clozzr](https://clozzr.ca)
-**AI-powered SaaS for Canadian mortgage brokers**
+**🏠 &nbsp; Clozzr** &nbsp; `[ ACTIVE ]`
 
-Deal tracking · Document verification · Condition extraction · Automated broker communications
+> AI-powered deal management for Canadian mortgage brokers
 
-![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-black?style=flat-square&logo=vercel)
+- 📋 &nbsp; Deal pipeline + condition tracking
+- 🤖 &nbsp; AI document verification
+- 🔔 &nbsp; Automated reminders & communications
+- 🔒 &nbsp; PIPEDA / CASL compliant
+
+`Next.js` `TypeScript` `Supabase` `Vercel`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0D1117?style=flat-square&logo=github&logoColor=white)](https://github.com/nishantgumber/clozzr-overview)
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🎵 [Audoji Inc.](https://audoji.com)
-**Audio-emoji sharing platform** *(Volunteer SWE)*
+**🎵 &nbsp; Audoji Inc.** &nbsp; `[ VOLUNTEER ]`
 
-Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
+> Audio-emoji sharing platform — send song clips as texts
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js)
-![REST API](https://img.shields.io/badge/REST_APIs-FF6C37?style=flat-square&logo=postman&logoColor=white)
+- 📣 &nbsp; RCS brand marketing campaigns
+- 🎛️ &nbsp; Audoji Studio creator tool
+- 🖥️ &nbsp; Admin dashboard
+- 🔗 &nbsp; Microservices architecture
+
+`React` `Next.js` `REST APIs` `Node.js`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0D1117?style=flat-square&logo=github&logoColor=white)](https://github.com/nishantgumber)
+
+</td>
+</tr>
+<tr><td colspan="2"><br/></td></tr>
+<tr>
+<td width="50%" valign="top">
+
+**📊 &nbsp; Unquoted** &nbsp; `[ PAUSED ]`
+
+> Insurance comparison + policy management platform
+
+- 🔍 &nbsp; Multi-provider quote comparison
+- 📁 &nbsp; Unified policy dashboard
+- 📝 &nbsp; Guided claims filing
+- 🏗️ &nbsp; Two-sided marketplace architecture
+
+`Next.js` `React` `Firebase` `Tailwind`
+
+[![View Repo](https://img.shields.io/badge/View_Repo-0D1117?style=flat-square&logo=github&logoColor=white)](https://github.com/nishantgumber/unquoted-insurance-overview)
+
+</td>
+<td width="50%" valign="top">
+
+**🔜 &nbsp; Next project** &nbsp; `[ COMING SOON ]`
+
+> Always building. Always shipping.
+
+<br/>
+
+- 💡 &nbsp; Ideas in the pipeline
+- 🛠️ &nbsp; Watch this space
+
+<br/>
+
+`???` `???` `???`
 
 </td>
 </tr>
@@ -67,7 +139,45 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 
 ---
 
-## 🛠️ Tech stack
+<br/>
+
+<!-- ============================================================ -->
+<!-- ③ ANIMATED CAREER TIMELINE SVG                              -->
+<!-- ============================================================ -->
+
+### &nbsp; `> git log --oneline ./career`
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/timeline.svg" alt="Career Timeline" width="100%"/>
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!-- ④ ANIMATED SKILL RADAR CHART                                -->
+<!-- ============================================================ -->
+
+### &nbsp; `> cat ./stack.json`
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/skills.svg" alt="Skills Radar" width="520"/>
+</div>
+
+<br/>
+
+<!-- TECH BADGES — supplementary detail below the radar -->
+<details>
+<summary>&nbsp; 🔍 Full tech stack breakdown</summary>
+
+<br/>
 
 **Languages**
 
@@ -99,20 +209,49 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 
 ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Artifactory](https://img.shields.io/badge/Artifactory-40BE46?style=for-the-badge&logo=jfrog&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
+
+</details>
 
 <br/>
 
 ---
 
-## 📊 GitHub stats
+<br/>
 
+<!-- ============================================================ -->
+<!-- ⑤ CURRENTLY BUILDING LIVE TICKER                           -->
+<!-- ============================================================ -->
+
+### &nbsp; `> tail -f ./now`
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/ticker.svg" alt="Currently building" width="100%"/>
+</div>
+
+> *Auto-updates weekly via GitHub Actions*
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!--                      GITHUB STATS                           -->
+<!-- ============================================================ -->
+
+### &nbsp; `> github --stats`
+
+<br/>
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=nishantgumber&theme=tokyonight-duo&hide_border=true&background=0D1117&stroke=7AA2F7&ring=7AA2F7&fire=FF9E64&currStreakLabel=7AA2F7)](https://github.com/nishantgumber)
+[![GitHub Streak](https://streak-stats.demolab.com?user=nishantgumber&theme=tokyonight-duo&hide_border=true&background=0D1117&stroke=7AA2F7&ring=7AA2F7&fire=FF9E64&currStreakLabel=7AA2F7&dates=a9b1d6&sideLabels=a9b1d6&sideNums=c0caf5)](https://github.com/nishantgumber)
 
 </div>
 
@@ -120,47 +259,113 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 
 ---
 
- 
+<br/>
+
+<!-- ============================================================ -->
+<!--                   CONTRIBUTION SNAKE                        -->
+<!-- ============================================================ -->
+
+### &nbsp; `> watch ./contributions`
+
+<br/>
+
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake.svg" />
-  <img alt="snake animation" src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake.svg" />
 </picture>
 </div>
 
-
-## 💼 Experience highlights
-
-| Role | Company | Period | Key impact |
-|------|---------|--------|------------|
-| Software Engineer Intern | BMO Financial Group | May 2026 – Aug 2026 | AWS ECR/ECS microservices · CDK IaC · CI/CD pipelines |
-| Software Developer Intern | BMO Financial Group | Sep 2025 – Dec 2025 | Legacy migration · rate limiting · PostgreSQL optimization |
-| Business Analyst Intern (Technical) | BMO Financial Group | May 2025 – Aug 2025 | Fraud detection pipeline · Power BI dashboards |
-| Support Analyst Intern | BMO Financial Group | May 2024 – Aug 2024 | AWS OpenSearch · Python automation · 20+ hrs/week saved |
-
 <br/>
 
 ---
 
-## 🎓 Education
-
-**Dalhousie University** — Bachelor of Applied Computer Science *(Expected Dec 2026)*
-
-`Data Structures & Algorithms` `Cloud Computing` `Database Management` `Information Security` `OOP` `Web Development`
-
 <br/>
 
----
+<!-- ============================================================ -->
+<!-- ⑥ SPOTIFY NOW PLAYING                                       -->
+<!-- ============================================================ -->
+
+### &nbsp; `> spotify --now-playing`
+
+<br/>
 
 <div align="center">
 
-**Open to software engineering roles in Canada and remote US — available January 2027**
+[![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=true&bar_color=7aa2f7&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&redirect=true)
 
-[![LinkedIn](https://img.shields.io/badge/Let's_connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nishant-gumber/)
-[![Email](https://img.shields.io/badge/Send_me_an_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nishantgumber123@gmail.com)
+</div>
 
-<!-- Animated footer banner -->
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:414868,50:1a1b27,100:0D1117&height=120&section=footer)
+> *Replace `YOUR_SPOTIFY_UID` with your Spotify username — setup guide in the [spotify-github-profile](https://github.com/kittinan/spotify-github-profile) repo*
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!-- ⑦ VISITOR WORLD MAP                                         -->
+<!-- ============================================================ -->
+
+### &nbsp; `> traceroute ./visitors`
+
+<br/>
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/worldmap.svg" alt="Visitor map" width="100%"/>
+</div>
+
+> *Auto-updates daily via GitHub Actions*
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!--                       EDUCATION                             -->
+<!-- ============================================================ -->
+
+### &nbsp; `> cat ./education.txt`
+
+<br/>
+
+**Dalhousie University** &nbsp;|&nbsp; Bachelor of Applied Computer Science &nbsp;|&nbsp; *Expected Dec 2026*
+
+<br/>
+
+![DSA](https://img.shields.io/badge/Data_Structures_%26_Algorithms-1a1b27?style=flat-square)
+![Cloud](https://img.shields.io/badge/Cloud_Computing-1a1b27?style=flat-square)
+![DB](https://img.shields.io/badge/Database_Management-1a1b27?style=flat-square)
+![Security](https://img.shields.io/badge/Information_Security-1a1b27?style=flat-square)
+![OOP](https://img.shields.io/badge/Object_Oriented_Design-1a1b27?style=flat-square)
+![Web](https://img.shields.io/badge/Web_Development-1a1b27?style=flat-square)
+
+<br/>
+
+---
+
+<br/>
+
+<!-- ============================================================ -->
+<!--                         FOOTER                              -->
+<!-- ============================================================ -->
+
+<div align="center">
+
+*Open to remote US software engineering roles — available January 2027*
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nishant-gumber/) &nbsp;
+[![Email](https://img.shields.io/badge/Send_an_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nishantgumber123@gmail.com)
+
+<br/>
+
+<!-- ① CUSTOM SVG FOOTER -->
+<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/footer.svg" alt="footer" width="100%"/>
 
 </div>
