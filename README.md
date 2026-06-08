@@ -297,7 +297,6 @@
 
 </div>
 
-> *Replace `YOUR_SPOTIFY_UID` with your Spotify username — setup guide in the [spotify-github-profile](https://github.com/kittinan/spotify-github-profile) repo*
 
 <br/>
 
