@@ -25,7 +25,6 @@ Here are some ideas to get you started:
 <br/>
 
 <!-- Profile badges -->
-![Profile Views](
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nishant-gumber/)
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nishantgumber123@gmail.com)
@@ -223,7 +222,7 @@ Then go to **Settings → Actions → General → Workflow permissions** and set
 
 <div align="center">
 
-**Open to remote US software engineering roles — available January 2027**
+**Open to software engineering roles in Canada and remote US — available January 2027**
 
 [![LinkedIn](https://img.shields.io/badge/Let's_connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nishant-gumber/)
 [![Email](https://img.shields.io/badge/Send_me_an_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nishantgumber123@gmail.com)
