@@ -59,7 +59,7 @@
 
   <!-- Footer text -->
   <text class="footer-text" x="450" y="55" text-anchor="middle">
-    built with 💙 by nishant · toronto, on → us remote
+    built with 💙 by nishant · toronto, on 
   </text>
   <text class="footer-text" x="450" y="73" text-anchor="middle" style="animation-delay:0.8s; opacity:0">
     © 2026 nishantgumber · open to remote us swe roles
