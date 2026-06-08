@@ -160,6 +160,6 @@
   <!-- Location tag top right -->
   <g class="corner">
     <text x="858" y="36" text-anchor="end" fill="#565f89" font-size="11" font-family="'Fira Code', monospace">📍 Toronto, ON</text>
-    <text x="858" y="52" text-anchor="end" fill="#565f89" font-size="11" font-family="'Fira Code', monospace">→ US Remote</text>
+    <text x="858" y="52" text-anchor="end" fill="#565f89" font-size="11" font-family="'Fira Code', monospace"></text>
   </g>
 </svg>
