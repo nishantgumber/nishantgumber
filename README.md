@@ -125,10 +125,16 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 ## 📊 GitHub stats
 
 <div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nishantgumber&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishantgumber&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
-
+<table>
+<tr>
+<td>
+<img src="https://github-readme-stats.vercel.app/api?username=nishantgumber&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" height="170" />
+</td>
+<td>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nishantgumber&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117" height="170" />
+</td>
+</tr>
+</table>
 </div>
 
 <div align="center">
