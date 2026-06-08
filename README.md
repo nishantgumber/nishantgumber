@@ -284,47 +284,6 @@
 <br/>
 
 <!-- ============================================================ -->
-<!-- ⑥ SPOTIFY NOW PLAYING                                       -->
-<!-- ============================================================ -->
-
-### &nbsp; `> spotify --now-playing`
-
-<br/>
-
-<div align="center">
-
-[![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=pciycoynog6vxbt08ieazz867&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=true&bar_color=7aa2f7&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=pciycoynog6vxbt08ieazz867&redirect=true)
-
-</div>
-
-
-<br/>
-
----
-
-<br/>
-
-<!-- ============================================================ -->
-<!-- ⑦ VISITOR WORLD MAP                                         -->
-<!-- ============================================================ -->
-
-### &nbsp; `> traceroute ./visitors`
-
-<br/>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/main/assets/worldmap.svg" alt="Visitor map" width="100%"/>
-</div>
-
-> *Auto-updates daily via GitHub Actions*
-
-<br/>
-
----
-
-<br/>
-
-<!-- ============================================================ -->
 <!--                       EDUCATION                             -->
 <!-- ============================================================ -->
 
