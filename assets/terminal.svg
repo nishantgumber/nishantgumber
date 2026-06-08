@@ -1,0 +1,148 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .term-text {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 13px;
+        fill: #a9b1d6;
+      }
+      .prompt { fill: #9ece6a; }
+      .cmd    { fill: #c0caf5; }
+      .key    { fill: #7aa2f7; }
+      .val    { fill: #9ece6a; }
+      .str    { fill: #9ece6a; }
+      .arr    { fill: #ff9e64; }
+      .sym    { fill: #89ddff; }
+      .comment{ fill: #565f89; }
+      .cursor {
+        animation: blink 1s step-end infinite;
+      }
+      .l1  { animation: fadeIn 0s   0.2s both; opacity:0; }
+      .l2  { animation: fadeIn 0s   0.7s both; opacity:0; }
+      .l3  { animation: fadeIn 0s   1.0s both; opacity:0; }
+      .l4  { animation: fadeIn 0s   1.3s both; opacity:0; }
+      .l5  { animation: fadeIn 0s   1.6s both; opacity:0; }
+      .l6  { animation: fadeIn 0s   1.9s both; opacity:0; }
+      .l7  { animation: fadeIn 0s   2.2s both; opacity:0; }
+      .l8  { animation: fadeIn 0s   2.5s both; opacity:0; }
+      .l9  { animation: fadeIn 0s   2.8s both; opacity:0; }
+      .l10 { animation: fadeIn 0s   3.1s both; opacity:0; }
+      .l11 { animation: fadeIn 0s   3.4s both; opacity:0; }
+      .l12 { animation: fadeIn 0s   3.7s both; opacity:0; }
+      .l13 { animation: fadeIn 0s   4.0s both; opacity:0; }
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Window frame -->
+  <rect width="720" height="320" rx="10" fill="#1a1b27" stroke="#414868" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect width="720" height="36" rx="10" fill="#16161e"/>
+  <rect y="26" width="720" height="10" fill="#16161e"/>
+
+  <!-- Traffic lights -->
+  <circle cx="22" cy="18" r="6" fill="#f7768e"/>
+  <circle cx="42" cy="18" r="6" fill="#e0af68"/>
+  <circle cx="62" cy="18" r="6" fill="#9ece6a"/>
+
+  <!-- Title -->
+  <text x="360" y="23" text-anchor="middle" fill="#565f89" font-size="12" font-family="'Fira Code', monospace">nishant@github: ~/about</text>
+
+  <!-- Terminal content -->
+  <g class="term-text">
+
+    <!-- Line 1: prompt + command -->
+    <g class="l1">
+      <text x="20" y="64"><tspan class="prompt">❯</tspan> <tspan class="cmd">cat about.sh</tspan></text>
+    </g>
+
+    <!-- Line 2: blank -->
+    <g class="l2">
+      <text x="20" y="84" class="comment"># ── Nishant Gumber ─────────────────────────────</text>
+    </g>
+
+    <!-- Line 3 -->
+    <g class="l3">
+      <text x="20" y="104"><tspan class="sym">const</tspan> <tspan class="key">nishant</tspan> <tspan class="sym">=</tspan> <tspan class="sym">{</tspan></text>
+    </g>
+
+    <!-- Line 4 -->
+    <g class="l4">
+      <text x="20" y="124">
+        <tspan dx="20" class="key">location</tspan><tspan class="sym">:</tspan>
+        <tspan class="str">  "Toronto, ON 🇨🇦  →  US Remote 🌎"</tspan><tspan class="sym">,</tspan>
+      </text>
+    </g>
+
+    <!-- Line 5 -->
+    <g class="l5">
+      <text x="20" y="144">
+        <tspan dx="20" class="key">education</tspan><tspan class="sym">:</tspan>
+        <tspan class="str"> "Applied CS @ Dalhousie University"</tspan><tspan class="sym">,</tspan>
+      </text>
+    </g>
+
+    <!-- Line 6 -->
+    <g class="l6">
+      <text x="20" y="164">
+        <tspan dx="20" class="key">role</tspan><tspan class="sym">:</tspan>
+        <tspan class="str">      "4× SWE Intern @ BMO Financial Group"</tspan><tspan class="sym">,</tspan>
+      </text>
+    </g>
+
+    <!-- Line 7 -->
+    <g class="l7">
+      <text x="20" y="184">
+        <tspan dx="20" class="key">building</tspan><tspan class="sym">:</tspan>
+        <tspan class="str">  ["Clozzr 🚀", "Audoji Inc. 🎵"]</tspan><tspan class="sym">,</tspan>
+      </text>
+    </g>
+
+    <!-- Line 8 -->
+    <g class="l8">
+      <text x="20" y="204">
+        <tspan dx="20" class="key">interests</tspan><tspan class="sym">:</tspan>
+        <tspan class="arr"> ["Full-Stack", "Cloud", "AI/SaaS", "Startups"]</tspan><tspan class="sym">,</tspan>
+      </text>
+    </g>
+
+    <!-- Line 9 -->
+    <g class="l9">
+      <text x="20" y="224">
+        <tspan dx="20" class="key">openTo</tspan><tspan class="sym">:</tspan>
+        <tspan class="str">    "Remote US SWE roles — Jan 2027"</tspan><tspan class="sym">,</tspan>
+      </text>
+    </g>
+
+    <!-- Line 10 -->
+    <g class="l10">
+      <text x="20" y="244">
+        <tspan dx="20" class="key">funFact</tspan><tspan class="sym">:</tspan>
+        <tspan class="str">   "I turn messy real-world problems into clean software"</tspan>
+      </text>
+    </g>
+
+    <!-- Line 11: closing brace -->
+    <g class="l11">
+      <text x="20" y="264"><tspan class="sym">};</tspan></text>
+    </g>
+
+    <!-- Line 12: blank prompt -->
+    <g class="l12">
+      <text x="20" y="284"><tspan class="prompt">❯</tspan> <tspan class="comment">// ready to ship 🚀</tspan></text>
+    </g>
+
+    <!-- Line 13: cursor -->
+    <g class="l13">
+      <text x="20" y="304"><tspan class="prompt">❯</tspan> <tspan class="cursor" fill="#7aa2f7">▋</tspan></text>
+    </g>
+
+  </g>
+</svg>
