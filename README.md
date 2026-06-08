@@ -293,7 +293,7 @@
 
 <div align="center">
 
-[![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=true&bar_color=7aa2f7&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&redirect=true)
+[![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=Nishantgumber&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=true&bar_color=7aa2f7&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&redirect=true)
 
 </div>
 
