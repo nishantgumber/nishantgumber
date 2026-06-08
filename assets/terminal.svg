@@ -77,7 +77,7 @@
     <g class="l4">
       <text x="20" y="124">
         <tspan dx="20" class="key">location</tspan><tspan class="sym">:</tspan>
-        <tspan class="str">  "Toronto, ON 🇨🇦  →  US Remote 🌎"</tspan><tspan class="sym">,</tspan>
+        <tspan class="str">  "Toronto, ON 🇨🇦  "</tspan><tspan class="sym">,</tspan>
       </text>
     </g>
 
@@ -117,7 +117,7 @@
     <g class="l9">
       <text x="20" y="224">
         <tspan dx="20" class="key">openTo</tspan><tspan class="sym">:</tspan>
-        <tspan class="str">    "Remote US SWE roles — Jan 2027"</tspan><tspan class="sym">,</tspan>
+        <tspan class="str">    "SWE roles — Jan 2027"</tspan><tspan class="sym">,</tspan>
       </text>
     </g>
 
