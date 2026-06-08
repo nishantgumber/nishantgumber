@@ -1,0 +1,75 @@
+<svg viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#2d3561"/>
+      <stop offset="50%"  stop-color="#1a1b27"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="footerLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7aa2f7" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#7aa2f7" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#bb9af7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .footer-wave {
+        animation: footerWave 6s ease-in-out infinite;
+      }
+      .footer-text {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 11px;
+        fill: #565f89;
+        animation: fadeIn 1s ease 0.5s both;
+        opacity: 0;
+      }
+      .footer-dot {
+        animation: pulse 2s ease-in-out infinite;
+      }
+      @keyframes footerWave {
+        0%, 100% { d: path("M0,40 C200,20 400,60 600,35 C750,15 850,45 900,30 L900,120 L0,120 Z"); }
+        50%       { d: path("M0,50 C200,30 400,70 600,45 C750,25 850,55 900,40 L900,120 L0,120 Z"); }
+      }
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; }
+        50%       { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="url(#footerBg)"/>
+
+  <!-- Wave shape -->
+  <path class="footer-wave"
+    d="M0,40 C200,20 400,60 600,35 C750,15 850,45 900,30 L900,120 L0,120 Z"
+    fill="#7aa2f7" opacity="0.06"/>
+
+  <!-- Top accent line -->
+  <line x1="0" y1="1" x2="900" y2="1" stroke="url(#footerLine)" stroke-width="1.5"/>
+
+  <!-- Decorative dots -->
+  <g>
+    <circle class="footer-dot" cx="80"  cy="70" r="2" fill="#7aa2f7" style="animation-delay:0s"/>
+    <circle class="footer-dot" cx="820" cy="70" r="2" fill="#bb9af7" style="animation-delay:0.5s"/>
+    <circle class="footer-dot" cx="440" cy="55" r="1.5" fill="#7dcfff" style="animation-delay:1s"/>
+  </g>
+
+  <!-- Footer text -->
+  <text class="footer-text" x="450" y="55" text-anchor="middle">
+    built with 💙 by nishant · toronto, on → us remote
+  </text>
+  <text class="footer-text" x="450" y="73" text-anchor="middle" style="animation-delay:0.8s; opacity:0">
+    © 2026 nishantgumber · open to remote us swe roles
+  </text>
+
+  <!-- Corner brackets -->
+  <g stroke="#414868" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M16,12 L10,12 L10,22"/>
+    <path d="M884,12 L890,12 L890,22"/>
+    <path d="M16,108 L10,108 L10,98"/>
+    <path d="M884,108 L890,108 L890,98"/>
+  </g>
+</svg>
