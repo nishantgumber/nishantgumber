@@ -143,6 +143,14 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 
 ---
 
+## 🐍 Contribution snake
+ 
+<div align="center">
+![snake animation](https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/dist/snake.svg)
+ 
+</div>
+
+
 ## 💼 Experience highlights
 
 | Role | Company | Period | Key impact |
