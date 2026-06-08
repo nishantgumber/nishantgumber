@@ -146,8 +146,11 @@ Share song-clip audio emojis over text · RCS brand campaigns · Creator studio
 ## 🐍 Contribution snake
  
 <div align="center">
-![snake animation](https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/dist/snake.svg)
- 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/nishantgumber/nishantgumber/output/snake.svg" />
+</picture>
 </div>
 
 
