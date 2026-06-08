@@ -356,7 +356,7 @@
 
 <div align="center">
 
-*Open to remote US software engineering roles — available January 2027*
+*Open to software engineering roles — available January 2027*
 
 <br/>
 
