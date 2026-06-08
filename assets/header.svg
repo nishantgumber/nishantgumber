@@ -1,1 +1,165 @@
+<svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="40%" stop-color="#0f2027"/>
+      <stop offset="100%" stop-color="#2d3561"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7aa2f7" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7aa2f7" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#bb9af7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0caf5"/>
+      <stop offset="50%" stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .name {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        fill: url(#textGrad);
+        filter: url(#glow);
+        animation: fadeSlideDown 1s ease forwards;
+        opacity: 0;
+      }
+      .subtitle {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 15px;
+        fill: #a9b1d6;
+        animation: fadeSlideDown 1s ease 0.4s forwards;
+        opacity: 0;
+      }
+      .tag {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 12px;
+        animation: fadeIn 1s ease 0.8s forwards;
+        opacity: 0;
+      }
+      .dot {
+        animation: pulse 2s ease-in-out infinite;
+      }
+      .dot1 { animation-delay: 0s; }
+      .dot2 { animation-delay: 0.4s; }
+      .dot3 { animation-delay: 0.8s; }
+      .dot4 { animation-delay: 1.2s; }
+      .dot5 { animation-delay: 1.6s; }
+      .dot6 { animation-delay: 0.2s; }
+      .dot7 { animation-delay: 1s; }
+      .dot8 { animation-delay: 0.6s; }
+      .line {
+        stroke-dasharray: 900;
+        stroke-dashoffset: 900;
+        animation: drawLine 1.5s ease 0.2s forwards;
+      }
+      .line2 {
+        stroke-dasharray: 900;
+        stroke-dashoffset: 900;
+        animation: drawLine 1.5s ease 0.5s forwards;
+      }
+      .corner {
+        animation: fadeIn 1s ease 1s forwards;
+        opacity: 0;
+      }
+      .wavepath {
+        animation: wave 8s ease-in-out infinite;
+      }
+      @keyframes fadeSlideDown {
+        from { opacity: 0; transform: translateY(-12px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.2; r: 2; }
+        50%       { opacity: 1;   r: 3.5; }
+      }
+      @keyframes drawLine {
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes wave {
+        0%, 100% { d: path("M0,260 C150,240 300,270 450,255 C600,240 750,265 900,250 L900,280 L0,280 Z"); }
+        50%       { d: path("M0,265 C150,250 300,260 450,248 C600,236 750,258 900,245 L900,280 L0,280 Z"); }
+      }
+    </style>
+  </defs>
 
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bg)"/>
+
+  <!-- Animated wave footer shape -->
+  <path class="wavepath" d="M0,260 C150,240 300,270 450,255 C600,240 750,265 900,250 L900,280 L0,280 Z" fill="#7aa2f7" opacity="0.08"/>
+
+  <!-- Grid dots — decorative background -->
+  <g opacity="0.15">
+    <circle class="dot dot1" cx="60"  cy="40"  r="2" fill="#7aa2f7"/>
+    <circle class="dot dot2" cx="120" cy="80"  r="2" fill="#bb9af7"/>
+    <circle class="dot dot3" cx="80"  cy="130" r="2" fill="#7aa2f7"/>
+    <circle class="dot dot4" cx="820" cy="50"  r="2" fill="#bb9af7"/>
+    <circle class="dot dot5" cx="860" cy="100" r="2" fill="#7aa2f7"/>
+    <circle class="dot dot6" cx="840" cy="160" r="2" fill="#bb9af7"/>
+    <circle class="dot dot7" cx="150" cy="200" r="2" fill="#7aa2f7"/>
+    <circle class="dot dot8" cx="760" cy="210" r="2" fill="#bb9af7"/>
+    <circle class="dot dot1" cx="200" cy="50"  r="1.5" fill="#7dcfff"/>
+    <circle class="dot dot3" cx="700" cy="70"  r="1.5" fill="#7dcfff"/>
+    <circle class="dot dot5" cx="100" cy="170" r="1.5" fill="#7dcfff"/>
+    <circle class="dot dot2" cx="800" cy="190" r="1.5" fill="#7dcfff"/>
+  </g>
+
+  <!-- Horizontal accent lines -->
+  <line class="line"  x1="0" y1="196" x2="900" y2="196" stroke="url(#lineGrad)" stroke-width="0.5" opacity="0.6"/>
+  <line class="line2" x1="0" y1="200" x2="900" y2="200" stroke="url(#lineGrad)" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Corner brackets — top left -->
+  <g class="corner" stroke="#7aa2f7" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M24,18 L18,18 L18,32"/>
+    <path d="M876,18 L882,18 L882,32"/>
+    <path d="M24,262 L18,262 L18,248"/>
+    <path d="M876,262 L882,262 L882,248"/>
+  </g>
+
+  <!-- Glowing orb left -->
+  <circle cx="140" cy="140" r="55" fill="#7aa2f7" opacity="0.04" filter="url(#softglow)"/>
+  <!-- Glowing orb right -->
+  <circle cx="760" cy="140" r="55" fill="#bb9af7" opacity="0.04" filter="url(#softglow)"/>
+
+  <!-- Main name -->
+  <text class="name" x="450" y="128" text-anchor="middle">Nishant Gumber</text>
+
+  <!-- Subtitle -->
+  <text class="subtitle" x="450" y="162" text-anchor="middle">Software Engineer  ·  Builder  ·  Problem Solver</text>
+
+  <!-- Tag pills -->
+  <g class="tag">
+    <rect x="248" y="178" width="90" height="22" rx="11" fill="#1a1b27" stroke="#7aa2f7" stroke-width="0.8" opacity="0.9"/>
+    <text x="293" y="193" text-anchor="middle" fill="#7aa2f7" font-size="11" font-family="'Fira Code', monospace">Full-Stack</text>
+
+    <rect x="352" y="178" width="72" height="22" rx="11" fill="#1a1b27" stroke="#9ece6a" stroke-width="0.8" opacity="0.9"/>
+    <text x="388" y="193" text-anchor="middle" fill="#9ece6a" font-size="11" font-family="'Fira Code', monospace">Cloud</text>
+
+    <rect x="438" y="178" width="78" height="22" rx="11" fill="#1a1b27" stroke="#bb9af7" stroke-width="0.8" opacity="0.9"/>
+    <text x="477" y="193" text-anchor="middle" fill="#bb9af7" font-size="11" font-family="'Fira Code', monospace">DevOps</text>
+
+    <rect x="530" y="178" width="62" height="22" rx="11" fill="#1a1b27" stroke="#ff9e64" stroke-width="0.8" opacity="0.9"/>
+    <text x="561" y="193" text-anchor="middle" fill="#ff9e64" font-size="11" font-family="'Fira Code', monospace">AI/SaaS</text>
+  </g>
+
+  <!-- Location tag top right -->
+  <g class="corner">
+    <text x="858" y="36" text-anchor="end" fill="#565f89" font-size="11" font-family="'Fira Code', monospace">📍 Toronto, ON</text>
+    <text x="858" y="52" text-anchor="end" fill="#565f89" font-size="11" font-family="'Fira Code', monospace">→ US Remote</text>
+  </g>
+</svg>
