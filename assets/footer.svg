@@ -17,8 +17,8 @@
       }
       .footer-text {
         font-family: 'Fira Code', 'Courier New', monospace;
-        font-size: 11px;
-        fill: #565f89;
+        font-size: 14px;
+        fill: #a9b1d6;
         animation: fadeIn 1s ease 0.5s both;
         opacity: 0;
       }
@@ -62,7 +62,7 @@
     built with 💙 by nishant · toronto, on 
   </text>
   <text class="footer-text" x="450" y="73" text-anchor="middle" style="animation-delay:0.8s; opacity:0">
-    © 2026 nishantgumber · open to remote us swe roles
+    © 2026 nishantgumber · always building, always shipping
   </text>
 
   <!-- Corner brackets -->
