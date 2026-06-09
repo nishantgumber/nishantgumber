@@ -116,8 +116,8 @@
     <!-- Line 9 -->
     <g class="l9">
       <text x="20" y="224">
-        <tspan dx="20" class="key">openTo</tspan><tspan class="sym">:</tspan>
-        <tspan class="str">    "SWE roles — Jan 2027"</tspan><tspan class="sym">,</tspan>
+        <tspan dx="20" class="key">philosophy</tspan><tspan class="sym">:</tspan>
+        <tspan class="str"> "build things that solve real problems"</tspan><tspan class="sym">,</tspan>
       </text>
     </g>
 
