@@ -1,141 +1,135 @@
-<svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="tlLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#7aa2f7" stop-opacity="0.2"/>
-      <stop offset="20%"  stop-color="#7aa2f7" stop-opacity="1"/>
-      <stop offset="80%"  stop-color="#bb9af7" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0.2"/>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#9ece6a"/>
+      <stop offset="33%"  stop-color="#7dcfff"/>
+      <stop offset="66%"  stop-color="#bb9af7"/>
+      <stop offset="100%" stop-color="#7aa2f7"/>
     </linearGradient>
-    <filter id="nodeGlow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <style>
-      .tl-label {
-        font-family: 'Fira Code', 'Courier New', monospace;
-        font-size: 11px;
-        fill: #565f89;
-      }
-      .tl-role {
-        font-family: 'Segoe UI', system-ui, sans-serif;
-        font-size: 12px;
-        font-weight: 600;
-        fill: #c0caf5;
-      }
-      .tl-company {
-        font-family: 'Segoe UI', system-ui, sans-serif;
-        font-size: 11px;
-        fill: #7aa2f7;
-      }
-      .tl-current {
-        fill: #9ece6a;
-        font-weight: 700;
-      }
-      .timeline-line {
-        stroke-dasharray: 800;
-        stroke-dashoffset: 800;
-        animation: drawLine 2s ease 0.3s forwards;
-      }
-      .n1 { animation: popIn 0.4s ease 0.5s both; transform-origin: 100px 100px; }
-      .n2 { animation: popIn 0.4s ease 1.0s both; transform-origin: 270px 100px; }
-      .n3 { animation: popIn 0.4s ease 1.5s both; transform-origin: 440px 100px; }
-      .n4 { animation: popIn 0.4s ease 2.0s both; transform-origin: 610px 100px; }
-      .n5 { animation: popIn 0.4s ease 2.5s both; transform-origin: 780px 100px; }
-      .t1 { animation: fadeUp 0.5s ease 0.6s both; }
-      .t2 { animation: fadeUp 0.5s ease 1.1s both; }
-      .t3 { animation: fadeUp 0.5s ease 1.6s both; }
-      .t4 { animation: fadeUp 0.5s ease 2.1s both; }
-      .t5 { animation: fadeUp 0.5s ease 2.6s both; }
-      .pulse {
-        animation: pulse 2.5s ease-in-out infinite;
-        transform-origin: 780px 100px;
-      }
-      @keyframes drawLine {
-        to { stroke-dashoffset: 0; }
-      }
-      @keyframes popIn {
-        0%   { opacity: 0; transform: scale(0); }
-        70%  { transform: scale(1.2); }
-        100% { opacity: 1; transform: scale(1); }
-      }
-      @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(8px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes pulse {
-        0%, 100% { transform: scale(1);   opacity: 1; }
-        50%       { transform: scale(1.3); opacity: 0.7; }
-      }
+      .role { font-family:'Segoe UI',system-ui,sans-serif; font-size:14px; font-weight:700; fill:#c0caf5; }
+      .co   { font-family:'Segoe UI',system-ui,sans-serif; font-size:12px; fill:#7aa2f7; }
+      .date { font-family:'Fira Code','Courier New',monospace; font-size:11px; fill:#565f89; }
+      .tag  { font-family:'Fira Code','Courier New',monospace; font-size:10px; }
+      .vline { stroke-dasharray:440; stroke-dashoffset:440; animation:drawLine 2s ease 0.2s forwards; }
+      .c1 { animation:slideIn 0.5s ease 0.3s both; }
+      .c2 { animation:slideIn 0.5s ease 0.7s both; }
+      .c3 { animation:slideIn 0.5s ease 1.1s both; }
+      .c4 { animation:slideIn 0.5s ease 1.5s both; }
+      .d1 { animation:popIn 0.4s ease 0.3s both; transform-origin:42px 68px; }
+      .d2 { animation:popIn 0.4s ease 0.7s both; transform-origin:42px 188px; }
+      .d3 { animation:popIn 0.4s ease 1.1s both; transform-origin:42px 308px; }
+      .d4 { animation:popIn 0.4s ease 1.5s both; transform-origin:42px 428px; }
+      .pulse { animation:pulse 2.5s ease-in-out infinite; transform-origin:42px 68px; }
+      @keyframes drawLine { to { stroke-dashoffset:0; } }
+      @keyframes slideIn  { from{opacity:0;transform:translateX(-12px)} to{opacity:1;transform:translateX(0)} }
+      @keyframes popIn    { 0%{opacity:0;transform:scale(0)} 70%{transform:scale(1.3)} 100%{opacity:1;transform:scale(1)} }
+      @keyframes pulse    { 0%,100%{r:18;opacity:0.2} 50%{r:26;opacity:0.05} }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="860" height="200" fill="#0D1117" rx="8"/>
+  <rect width="860" height="520" rx="8" fill="#0D1117"/>
 
-  <!-- Timeline baseline -->
-  <line class="timeline-line" x1="60" y1="100" x2="820" y2="100" stroke="url(#tlLine)" stroke-width="2"/>
+  <!-- Vertical connecting line -->
+  <line class="vline" x1="42" y1="68" x2="42" y2="460"
+        stroke="url(#lineGrad)" stroke-width="2"/>
 
-  <!-- ── Node 1: Support Analyst 2024 ── -->
-  <g class="n1">
-    <circle cx="100" cy="100" r="10" fill="#1a1b27" stroke="#565f89" stroke-width="2"/>
-    <circle cx="100" cy="100" r="4"  fill="#565f89"/>
+  <!-- ══ ROLE 1 — Current (top, newest) ══ -->
+  <circle class="pulse" cx="42" cy="68" r="18" fill="#9ece6a"/>
+  <g class="d1">
+    <circle cx="42" cy="68" r="12" fill="#0D1117" stroke="#9ece6a" stroke-width="2.5"/>
+    <circle cx="42" cy="68" r="5"  fill="#9ece6a" filter="url(#glow)"/>
   </g>
-  <g class="t1">
-    <text x="100" y="74"  class="tl-label"   text-anchor="middle">May 2024</text>
-    <text x="100" y="128" class="tl-role"    text-anchor="middle">Support</text>
-    <text x="100" y="142" class="tl-role"    text-anchor="middle">Analyst</text>
-    <text x="100" y="157" class="tl-company" text-anchor="middle">BMO</text>
-  </g>
-
-  <!-- ── Node 2: BA Intern 2025 ── -->
-  <g class="n2">
-    <circle cx="270" cy="100" r="10" fill="#1a1b27" stroke="#7aa2f7" stroke-width="2"/>
-    <circle cx="270" cy="100" r="4"  fill="#7aa2f7"/>
-  </g>
-  <g class="t2">
-    <text x="270" y="74"  class="tl-label"   text-anchor="middle">May 2025</text>
-    <text x="270" y="128" class="tl-role"    text-anchor="middle">Business</text>
-    <text x="270" y="142" class="tl-role"    text-anchor="middle">Analyst</text>
-    <text x="270" y="157" class="tl-company" text-anchor="middle">BMO</text>
-  </g>
-
-  <!-- ── Node 3: SWE Intern Sep 2025 ── -->
-  <g class="n3">
-    <circle cx="440" cy="100" r="10" fill="#1a1b27" stroke="#bb9af7" stroke-width="2"/>
-    <circle cx="440" cy="100" r="4"  fill="#bb9af7"/>
-  </g>
-  <g class="t3">
-    <text x="440" y="74"  class="tl-label"   text-anchor="middle">Sep 2025</text>
-    <text x="440" y="128" class="tl-role"    text-anchor="middle">Software</text>
-    <text x="440" y="142" class="tl-role"    text-anchor="middle">Developer</text>
-    <text x="440" y="157" class="tl-company" text-anchor="middle">BMO</text>
+  <g class="c1">
+    <rect x="68" y="42" width="774" height="90" rx="6" fill="#16161e" stroke="#9ece6a" stroke-width="0.8"/>
+    <rect x="700" y="51" width="130" height="18" rx="9" fill="#9ece6a" opacity="0.12"/>
+    <text x="765" y="64" text-anchor="middle" class="tag" fill="#9ece6a">● CURRENT</text>
+    <text x="84"  y="64" class="role">Software Engineer Intern</text>
+    <text x="84"  y="80" class="date">May 2026 – Aug 2026</text>
+    <text x="84"  y="96" class="co">🏦  BMO Financial Group  ·  Toronto, ON</text>
+    <rect x="84"  y="107" width="72" height="17" rx="8" fill="#FF9900" opacity="0.15"/>
+    <text x="120" y="119" text-anchor="middle" class="tag" fill="#FF9900">AWS ECR/ECS</text>
+    <rect x="162" y="107" width="52" height="17" rx="8" fill="#7aa2f7" opacity="0.15"/>
+    <text x="188" y="119" text-anchor="middle" class="tag" fill="#7aa2f7">CDK IaC</text>
+    <rect x="220" y="107" width="80" height="17" rx="8" fill="#0078D7" opacity="0.15"/>
+    <text x="260" y="119" text-anchor="middle" class="tag" fill="#5ea8ff">Azure DevOps</text>
+    <rect x="306" y="107" width="52" height="17" rx="8" fill="#EE0000" opacity="0.15"/>
+    <text x="332" y="119" text-anchor="middle" class="tag" fill="#ff7070">Ansible</text>
+    <rect x="364" y="107" width="44" height="17" rx="8" fill="#61DAFB" opacity="0.12"/>
+    <text x="386" y="119" text-anchor="middle" class="tag" fill="#61DAFB">React</text>
+    <rect x="414" y="107" width="52" height="17" rx="8" fill="#bb9af7" opacity="0.15"/>
+    <text x="440" y="119" text-anchor="middle" class="tag" fill="#bb9af7">CI/CD</text>
   </g>
 
-  <!-- ── Node 4: SWE Intern May 2026 ── -->
-  <g class="n4">
-    <circle cx="610" cy="100" r="10" fill="#1a1b27" stroke="#7dcfff" stroke-width="2"/>
-    <circle cx="610" cy="100" r="4"  fill="#7dcfff"/>
+  <!-- ══ ROLE 2 ══ -->
+  <g class="d2">
+    <circle cx="42" cy="188" r="10" fill="#0D1117" stroke="#7dcfff" stroke-width="2"/>
+    <circle cx="42" cy="188" r="4"  fill="#7dcfff" filter="url(#glow)"/>
   </g>
-  <g class="t4">
-    <text x="610" y="74"  class="tl-label"   text-anchor="middle">May 2026</text>
-    <text x="610" y="128" class="tl-role"    text-anchor="middle">Software</text>
-    <text x="610" y="142" class="tl-role"    text-anchor="middle">Engineer</text>
-    <text x="610" y="157" class="tl-company" text-anchor="middle">BMO</text>
-  </g>
-
-  <!-- ── Node 5: Clozzr — current (pulsing) ── -->
-  <g class="n5">
-    <circle cx="780" cy="100" r="14" fill="#9ece6a" opacity="0.15" class="pulse" filter="url(#nodeGlow)"/>
-    <circle cx="780" cy="100" r="10" fill="#1a1b27" stroke="#9ece6a" stroke-width="2.5"/>
-    <circle cx="780" cy="100" r="4"  fill="#9ece6a"/>
-  </g>
-  <g class="t5">
-    <text x="780" y="72"  class="tl-label"    text-anchor="middle">2026 →</text>
-    <text x="780" y="128" class="tl-role tl-current" text-anchor="middle">Clozzr</text>
-    <text x="780" y="142" class="tl-role tl-current" text-anchor="middle">Founder</text>
-    <text x="780" y="157" class="tl-company"  text-anchor="middle" fill="#9ece6a">Active 🚀</text>
+  <g class="c2">
+    <rect x="68" y="162" width="774" height="90" rx="6" fill="#16161e" stroke="#414868" stroke-width="0.8"/>
+    <text x="84"  y="182" class="role">Software Developer Intern</text>
+    <text x="84"  y="198" class="date">Sep 2025 – Dec 2025</text>
+    <text x="84"  y="214" class="co">🏦  BMO Financial Group  ·  Halifax, NS</text>
+    <rect x="84"  y="225" width="60" height="17" rx="8" fill="#ED8B00" opacity="0.15"/>
+    <text x="114" y="237" text-anchor="middle" class="tag" fill="#ED8B00">Java/JSP</text>
+    <rect x="150" y="225" width="72" height="17" rx="8" fill="#336791" opacity="0.2"/>
+    <text x="186" y="237" text-anchor="middle" class="tag" fill="#7aa2f7">PostgreSQL</text>
+    <rect x="228" y="225" width="78" height="17" rx="8" fill="#F7DF1E" opacity="0.12"/>
+    <text x="267" y="237" text-anchor="middle" class="tag" fill="#F7DF1E">JavaScript</text>
+    <rect x="312" y="225" width="80" height="17" rx="8" fill="#EE0000" opacity="0.12"/>
+    <text x="352" y="237" text-anchor="middle" class="tag" fill="#ff7070">Rate Limiting</text>
+    <rect x="398" y="225" width="78" height="17" rx="8" fill="#7dcfff" opacity="0.12"/>
+    <text x="437" y="237" text-anchor="middle" class="tag" fill="#7dcfff">Geolocation</text>
   </g>
 
-  <!-- Connector label -->
-  <text x="430" y="190" text-anchor="middle" fill="#565f89" font-size="10" font-family="'Fira Code', monospace">── 4 consecutive internships · increasing scope ──</text>
+  <!-- ══ ROLE 3 ══ -->
+  <g class="d3">
+    <circle cx="42" cy="308" r="10" fill="#0D1117" stroke="#bb9af7" stroke-width="2"/>
+    <circle cx="42" cy="308" r="4"  fill="#bb9af7" filter="url(#glow)"/>
+  </g>
+  <g class="c3">
+    <rect x="68" y="282" width="774" height="90" rx="6" fill="#16161e" stroke="#414868" stroke-width="0.8"/>
+    <text x="84"  y="302" class="role">Business Analyst Intern (Technical)</text>
+    <text x="84"  y="318" class="date">May 2025 – Aug 2025</text>
+    <text x="84"  y="334" class="co">🏦  BMO Financial Group  ·  Halifax, NS</text>
+    <rect x="84"  y="345" width="50" height="17" rx="8" fill="#3776AB" opacity="0.2"/>
+    <text x="109" y="357" text-anchor="middle" class="tag" fill="#7aa2f7">Python</text>
+    <rect x="140" y="345" width="56" height="17" rx="8" fill="#F2C811" opacity="0.15"/>
+    <text x="168" y="357" text-anchor="middle" class="tag" fill="#F2C811">Power BI</text>
+    <rect x="202" y="345" width="100" height="17" rx="8" fill="#EE4444" opacity="0.12"/>
+    <text x="252" y="357" text-anchor="middle" class="tag" fill="#ff7070">Fraud Detection</text>
+    <rect x="308" y="345" width="110" height="17" rx="8" fill="#bb9af7" opacity="0.12"/>
+    <text x="363" y="357" text-anchor="middle" class="tag" fill="#bb9af7">Rule-based Logic</text>
+  </g>
+
+  <!-- ══ ROLE 4 (oldest) ══ -->
+  <g class="d4">
+    <circle cx="42" cy="428" r="10" fill="#0D1117" stroke="#7aa2f7" stroke-width="2"/>
+    <circle cx="42" cy="428" r="4"  fill="#7aa2f7" filter="url(#glow)"/>
+  </g>
+  <g class="c4">
+    <rect x="68" y="402" width="774" height="90" rx="6" fill="#16161e" stroke="#414868" stroke-width="0.8"/>
+    <text x="84"  y="422" class="role">Support Analyst Intern</text>
+    <text x="84"  y="438" class="date">May 2024 – Aug 2024</text>
+    <text x="84"  y="454" class="co">🏦  BMO Financial Group  ·  Halifax, NS</text>
+    <rect x="84"  y="465" width="90" height="17" rx="8" fill="#FF9900" opacity="0.15"/>
+    <text x="129" y="477" text-anchor="middle" class="tag" fill="#FF9900">AWS OpenSearch</text>
+    <rect x="180" y="465" width="50" height="17" rx="8" fill="#3776AB" opacity="0.2"/>
+    <text x="205" y="477" text-anchor="middle" class="tag" fill="#7aa2f7">Python</text>
+    <rect x="236" y="465" width="58" height="17" rx="8" fill="#43B02A" opacity="0.15"/>
+    <text x="265" y="477" text-anchor="middle" class="tag" fill="#43B02A">Selenium</text>
+    <rect x="300" y="465" width="100" height="17" rx="8" fill="#7aa2f7" opacity="0.12"/>
+    <text x="350" y="477" text-anchor="middle" class="tag" fill="#7aa2f7">Infra Monitoring</text>
+  </g>
+
+  <!-- Footer label -->
+  <text x="430" y="510" text-anchor="middle"
+        font-family="'Fira Code',monospace" font-size="10" fill="#414868">
+    ── 4 consecutive terms · support → data → engineering → cloud ──
+  </text>
 </svg>
