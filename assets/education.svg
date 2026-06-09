@@ -1,0 +1,82 @@
+<svg viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#7aa2f7"/>
+      <stop offset="100%" stop-color="#bb9af7"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#16161e"/>
+      <stop offset="100%" stop-color="#1a1b27"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .uni    { font-family:'Segoe UI',system-ui,sans-serif; font-size:20px; font-weight:700; fill:#c0caf5; }
+      .deg    { font-family:'Segoe UI',system-ui,sans-serif; font-size:14px; font-weight:600; fill:#7aa2f7; }
+      .sub    { font-family:'Fira Code','Courier New',monospace; font-size:11px; fill:#565f89; }
+      .course { font-family:'Fira Code','Courier New',monospace; font-size:10px; fill:#a9b1d6; }
+      .badge-lbl { font-family:'Fira Code','Courier New',monospace; font-size:10px; }
+      .card { animation: fadeIn 0.8s ease 0.2s both; }
+      .line { stroke-dasharray:160; stroke-dashoffset:160; animation:drawLine 1s ease 0.5s forwards; }
+      @keyframes fadeIn   { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes drawLine { to{stroke-dashoffset:0} }
+    </style>
+  </defs>
+
+  <rect width="860" height="200" rx="8" fill="#0D1117"/>
+
+  <!-- Card -->
+  <g class="card">
+    <!-- Card background -->
+    <rect x="0" y="0" width="860" height="200" rx="8" fill="url(#cardBg)" stroke="#414868" stroke-width="0.8"/>
+    <!-- Left accent bar -->
+    <rect x="0" y="0" width="5" height="200" rx="3" fill="url(#accentBar)"/>
+
+    <!-- Graduation cap icon area -->
+    <text x="32" y="56" font-size="32">🎓</text>
+
+    <!-- University name -->
+    <text x="74" y="46" class="uni">Dalhousie University</text>
+    <!-- Degree -->
+    <text x="74" y="66" class="deg">Bachelor of Applied Computer Science</text>
+    <!-- Location + date -->
+    <text x="74" y="84" class="sub">Halifax, NS  ·  Expected December 2026  ·  Co-op Program</text>
+
+    <!-- Divider line -->
+    <line class="line" x1="20" y1="100" x2="840" y2="100" stroke="#414868" stroke-width="0.8"/>
+
+    <!-- Coursework label -->
+    <text x="20" y="120" class="sub">Relevant Coursework</text>
+
+    <!-- Course badges -->
+    <!-- DSA -->
+    <rect x="20"  y="130" width="148" height="20" rx="10" fill="#7aa2f7" opacity="0.1" stroke="#7aa2f7" stroke-width="0.6"/>
+    <text x="94"  y="144" text-anchor="middle" class="badge-lbl" fill="#7aa2f7">Data Structures &amp; Algorithms</text>
+    <!-- Cloud -->
+    <rect x="174" y="130" width="112" height="20" rx="10" fill="#ff9e64" opacity="0.1" stroke="#ff9e64" stroke-width="0.6"/>
+    <text x="230" y="144" text-anchor="middle" class="badge-lbl" fill="#ff9e64">Cloud Computing</text>
+    <!-- DB -->
+    <rect x="292" y="130" width="126" height="20" rx="10" fill="#9ece6a" opacity="0.1" stroke="#9ece6a" stroke-width="0.6"/>
+    <text x="355" y="144" text-anchor="middle" class="badge-lbl" fill="#9ece6a">Database Management</text>
+    <!-- Security -->
+    <rect x="424" y="130" width="118" height="20" rx="10" fill="#f7768e" opacity="0.1" stroke="#f7768e" stroke-width="0.6"/>
+    <text x="483" y="144" text-anchor="middle" class="badge-lbl" fill="#f7768e">Information Security</text>
+    <!-- OOP -->
+    <rect x="548" y="130" width="130" height="20" rx="10" fill="#bb9af7" opacity="0.1" stroke="#bb9af7" stroke-width="0.6"/>
+    <text x="613" y="144" text-anchor="middle" class="badge-lbl" fill="#bb9af7">Object Oriented Design</text>
+    <!-- Web -->
+    <rect x="684" y="130" width="112" height="20" rx="10" fill="#7dcfff" opacity="0.1" stroke="#7dcfff" stroke-width="0.6"/>
+    <text x="740" y="144" text-anchor="middle" class="badge-lbl" fill="#7dcfff">Web Development</text>
+
+    <!-- Status badges row -->
+    <rect x="20"  y="162" width="68" height="18" rx="9" fill="#9ece6a" opacity="0.12"/>
+    <text x="54"  y="175" text-anchor="middle" class="badge-lbl" fill="#9ece6a">● Active</text>
+    <rect x="94"  y="162" width="88" height="18" rx="9" fill="#7aa2f7" opacity="0.12"/>
+    <text x="138" y="175" text-anchor="middle" class="badge-lbl" fill="#7aa2f7">4 Co-op Terms</text>
+    <rect x="188" y="162" width="88" height="18" rx="9" fill="#bb9af7" opacity="0.12"/>
+    <text x="232" y="175" text-anchor="middle" class="badge-lbl" fill="#bb9af7">Dec 2026</text>
+    <text x="840" y="175" text-anchor="end" class="sub">Halifax, NS 🇨🇦</text>
+  </g>
+</svg>
